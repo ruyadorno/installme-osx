@@ -1,6 +1,11 @@
 #!/bin/sh
 
 
+# setup folder structure
+mkdir ~/Documents/workspace
+mkdir ~/Documents/repos
+
+
 # brew setup
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -115,4 +120,15 @@ git clone https://github.com/othree/html5.vim.git
 cd ~/.vim/bundle/command-t/ruby/command-t
 /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby extconf.rb
 make
+
+
+## Get dotfiles repo and setup symlinks
+cd ~/Documents/repos/
+git clone https://github.com/ruyadorno/dotfiles.git
+cd ~/
+ln -s Documents/repos/dotfiles/bashrc .bash_profile
+ln -s Documents/repos/dotfiles/gitconfig .gitconfig
+ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
+ln -s Documents/repos/dotfiles/hgrc .hgrc
+ln -s Documents/repos/dotfiles/vimrc .vimrc
 
