@@ -1,6 +1,6 @@
 # My personal scripts to setup a new OSX
 
-These are just my personal scripts to help me setup a new osx machine. They are very opinionated and probably very wrong.
+These are just my personal scripts to help me setup a new osx machine.
 
 To start a new setup, simply run:
 
