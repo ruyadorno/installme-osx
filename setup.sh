@@ -115,7 +115,7 @@ git clone https://github.com/othree/html5.vim.git
 
 # Configure Command-T
 cd ~/.vim/bundle/command-t/ruby/command-t
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby extconf.rb
+ruby extconf.rb
 make
 
 
