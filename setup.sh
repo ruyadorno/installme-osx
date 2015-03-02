@@ -58,7 +58,7 @@ installcask sourcetree
 installcask skype
 installcask lastfm
 installcask vlc
-installcask onepassword
+installcask 1password
 installcask camtasia
 installcask cleanmymac
 installcask macpaw-gemini
