@@ -63,6 +63,7 @@ installcask camtasia
 installcask cleanmymac
 installcask macpaw-gemini
 installcask flickr-uploadr
+installcask spotify
 
 # games
 installcask steam
