@@ -33,6 +33,7 @@ brew install unrar
 brew install trash
 brew install tree
 brew install wget
+brew install tig
 
 # MacVim for terminal
 brew install macvim
@@ -52,7 +53,6 @@ installcask copy
 installcask google-chrome
 installcask firefox
 installcask iterm2
-installcask sourcetree
 
 # utils
 installcask skype
