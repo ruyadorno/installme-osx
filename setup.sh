@@ -109,7 +109,7 @@ git clone https://github.com/godlygeek/tabular.git
 git clone https://github.com/elzr/vim-json.git
 git clone https://github.com/ruyadorno/vim-change-indent.git
 git clone https://github.com/groenewege/vim-less.git
-git clone https://github.com/skammer/vim-css-color.git
+git clone https://github.com/ap/vim-css-color.git
 git clone https://github.com/hail2u/vim-css3-syntax
 git clone https://github.com/othree/html5.vim.git
 
