@@ -130,3 +130,7 @@ ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
 ln -s Documents/repos/dotfiles/hgrc .hgrc
 ln -s Documents/repos/dotfiles/vimrc .vimrc
 
+
+## Casks that needs password permission
+installcask private-internet-access
+
