@@ -90,6 +90,7 @@ cd ~/.vim/bundle/
 # Get all plugins
 git clone https://github.com/vim-scripts/bufkill.vim
 git clone https://github.com/wincent/Command-T.git
+git clone https://github.com/tpope/vim-fugitive.git
 echo "Command-T will need extra setup, please review its docs"
 open https://github.com/wincent/Command-T/blob/master/doc/command-t.txt#L174
 git clone https://github.com/rking/ag.vim
