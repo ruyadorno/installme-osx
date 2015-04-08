@@ -64,6 +64,7 @@ installcask cleanmymac
 installcask macpaw-gemini
 installcask flickr-uploadr
 installcask spotify
+installcask licecap
 
 # games
 installcask steam
