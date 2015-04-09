@@ -34,6 +34,7 @@ brew install trash
 brew install tree
 brew install wget
 brew install tig
+brew install ffind
 
 # MacVim for terminal
 brew install macvim
