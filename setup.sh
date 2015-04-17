@@ -66,6 +66,7 @@ installcask macpaw-gemini
 installcask flickr-uploadr
 installcask spotify
 installcask licecap
+installcask skitch
 
 # games
 installcask steam
