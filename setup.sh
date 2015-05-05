@@ -117,6 +117,7 @@ git clone https://github.com/ap/vim-css-color.git
 git clone https://github.com/hail2u/vim-css3-syntax
 git clone https://github.com/othree/html5.vim.git
 git clone https://github.com/pangloss/vim-javascript.git
+git clone https://github.com/nathanaelkane/vim-indent-guides.git
 
 
 # Configure Command-T
