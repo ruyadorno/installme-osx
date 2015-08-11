@@ -78,6 +78,7 @@ installcask openttd
 # npm dependencies that I'm not likely to live without
 npm install -g jshint
 npm install -g jsxhint
+npm install -g esformatter
 npm install -g grunt-cli
 npm install -g gulp
 npm install -g yo
@@ -119,6 +120,7 @@ git clone https://github.com/hail2u/vim-css3-syntax
 git clone https://github.com/othree/html5.vim.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
+git clone https://github.com/millermedeiros/vim-esformatter.git
 
 
 # Configure Command-T
