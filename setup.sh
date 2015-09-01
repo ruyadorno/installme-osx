@@ -58,11 +58,9 @@ installcask iterm2
 # utils
 installcask skype
 installcask lastfm
+installcask spotify
 installcask vlc
 installcask 1password
-installcask camtasia
-installcask cleanmymac
-installcask macpaw-gemini
 installcask flickr-uploadr
 installcask spotify
 installcask licecap
@@ -154,4 +152,5 @@ chsh -s /bin/zsh
 
 ## Casks that needs password permission
 installcask private-internet-access
+installcask dockertoolbox
 
