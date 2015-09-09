@@ -119,6 +119,7 @@ git clone https://github.com/othree/html5.vim.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/millermedeiros/vim-esformatter.git
+git clone https://github.com/ekalinin/Dockerfile.vim.git
 
 
 # Configure Command-T
