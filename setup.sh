@@ -116,7 +116,9 @@ git clone https://github.com/groenewege/vim-less.git
 git clone https://github.com/ap/vim-css-color.git
 git clone https://github.com/hail2u/vim-css3-syntax
 git clone https://github.com/othree/html5.vim.git
-git clone https://github.com/pangloss/vim-javascript.git
+git clone https://github.com/othree/yajs.vim.git
+git clone https://github.com/vim-scripts/SyntaxComplete.git
+git clone https://github.com/othree/javascript-libraries-syntax.vim.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/millermedeiros/vim-esformatter.git
 git clone https://github.com/ekalinin/Dockerfile.vim.git
