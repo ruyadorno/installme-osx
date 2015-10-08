@@ -25,6 +25,7 @@ brew install readline
 brew install the_silver_searcher
 brew install ant
 brew install git
+brew install git-lfs
 brew install mercurial
 brew install node
 brew install irssi
