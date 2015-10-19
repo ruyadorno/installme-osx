@@ -67,6 +67,8 @@ installcask spotify
 installcask licecap
 installcask skitch
 installcask slack
+installcask google-drive
+installcask google-photos-backup
 
 # games
 installcask steam
