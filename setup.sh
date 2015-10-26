@@ -36,6 +36,7 @@ brew install tree
 brew install wget
 brew install tig
 brew install ffind
+brew install openconnect
 
 # MacVim for terminal
 brew install macvim
