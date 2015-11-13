@@ -37,6 +37,7 @@ brew install wget
 brew install tig
 brew install ffind
 brew install openconnect
+brew install wifi-password
 
 # MacVim for terminal
 brew install macvim
