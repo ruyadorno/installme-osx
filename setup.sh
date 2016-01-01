@@ -44,7 +44,7 @@ brew install macvim
 alias vim='mvim -v'
 
 # OSX native apps
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 function installcask() {
     brew cask install "${@}" 2> /dev/null
