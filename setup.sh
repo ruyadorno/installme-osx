@@ -64,7 +64,6 @@ installcask lastfm
 installcask spotify
 installcask vlc
 installcask 1password
-installcask flickr-uploadr
 installcask licecap
 installcask skitch
 installcask slack
