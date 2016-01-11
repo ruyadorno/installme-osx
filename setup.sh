@@ -78,7 +78,7 @@ installcask openttd
 
 # npm dependencies that I'm not likely to live without
 npm install -g eslint
-npm install -g ruyadorno/eslint_d.js#eslintme
+npm install -g eslint_d
 npm install -g eslintme
 npm install -g grunt-cli
 npm install -g gulp
