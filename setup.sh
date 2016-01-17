@@ -122,6 +122,7 @@ git clone https://github.com/othree/html5.vim.git
 git clone https://github.com/othree/yajs.vim.git
 git clone https://github.com/vim-scripts/SyntaxComplete.git
 git clone https://github.com/othree/javascript-libraries-syntax.vim.git
+git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/ekalinin/Dockerfile.vim.git
 git clone https://github.com/ternjs/tern_for_vim.git
