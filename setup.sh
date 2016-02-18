@@ -69,6 +69,7 @@ installcask skitch
 installcask slack
 installcask google-drive
 installcask google-photos-backup
+installcask cheatsheet
 
 # games
 installcask steam
