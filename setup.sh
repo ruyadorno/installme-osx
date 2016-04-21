@@ -39,6 +39,8 @@ brew install ffind
 brew install openconnect
 brew install wifi-password
 brew install gpg
+brew install gpg-agent
+brew install pinentry-mac
 
 # MacVim for terminal
 brew install macvim
@@ -158,6 +160,8 @@ ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
 ln -s Documents/repos/dotfiles/hgrc .hgrc
 ln -s Documents/repos/dotfiles/vimrc .vimrc
 ln -s Documents/repos/dotfiles/zshrc .zshrc
+ln -s Documents/repos/dotfiles/gpg.conf .gnupg/gpg.conf
+ln -s Documents/repos/dotfiles/gpg-agent.conf .gnupg/gpg-agent.conf
 
 
 # Set zsh as default shell
