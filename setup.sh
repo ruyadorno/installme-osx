@@ -38,6 +38,7 @@ brew install tig
 brew install ffind
 brew install openconnect
 brew install wifi-password
+brew install gpg
 
 # MacVim for terminal
 brew install macvim
