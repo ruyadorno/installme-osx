@@ -41,6 +41,7 @@ brew install wifi-password
 brew install gpg
 brew install gpg-agent
 brew install pinentry-mac
+brew install hub
 
 # MacVim for terminal
 brew install macvim
