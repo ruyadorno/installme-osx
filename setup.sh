@@ -147,10 +147,7 @@ make
 ## Get dotfiles repo
 cd ~/Documents/repos/
 git clone https://github.com/ruyadorno/dotfiles.git
-
-
-## Get zsh bundle manager
-git clone https://github.com/tarjoilija/zgen.git
+git clone https://github.com/rupa/z.git
 
 
 ## Setup symlinks
@@ -160,13 +157,8 @@ ln -s Documents/repos/dotfiles/gitconfig .gitconfig
 ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
 ln -s Documents/repos/dotfiles/hgrc .hgrc
 ln -s Documents/repos/dotfiles/vimrc .vimrc
-ln -s Documents/repos/dotfiles/zshrc .zshrc
 ln -s Documents/repos/dotfiles/gpg.conf .gnupg/gpg.conf
 ln -s Documents/repos/dotfiles/gpg-agent.conf .gnupg/gpg-agent.conf
-
-
-# Set zsh as default shell
-chsh -s /bin/zsh
 
 
 ## Casks that needs password permission
