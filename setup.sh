@@ -73,7 +73,7 @@ installcask skitch
 installcask slack
 installcask google-drive
 installcask google-photos-backup
-installcask cheatsheet
+installcask kap
 
 # games
 installcask steam
@@ -133,6 +133,7 @@ git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/ekalinin/Dockerfile.vim.git
 git clone https://github.com/ternjs/tern_for_vim.git
+git clone https://github.com/rizzatti/dash.vim.git
 
 
 # Configure tern_for_vim
