@@ -82,6 +82,7 @@ installcask openttd
 
 
 # npm dependencies that I'm not likely to live without
+npm install -g jsonlint
 npm install -g eslint
 npm install -g eslint_d
 npm install -g eslintme
