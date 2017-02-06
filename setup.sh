@@ -42,6 +42,7 @@ brew install gpg
 brew install gpg-agent
 brew install pinentry-mac
 brew install hub
+brew install asciinema
 
 # MacVim for terminal
 brew install macvim
