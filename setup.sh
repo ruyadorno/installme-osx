@@ -93,6 +93,9 @@ npm install -g yo
 npm install -g http-server
 npm install -g ipt
 npm install -g ntl
+npm install -g fkill-cli
+npm install -g localtunnel
+npm install -g webtorrent-cli
 
 
 # vim setup
