@@ -39,8 +39,6 @@ brew install ffind
 brew install openconnect
 brew install wifi-password
 brew install gpg
-brew install gpg-agent
-brew install pinentry-mac
 brew install hub
 brew install asciinema
 
@@ -109,8 +107,6 @@ cd ~/.vim/bundle/
 git clone https://github.com/vim-scripts/bufkill.vim
 git clone https://github.com/wincent/Command-T.git
 git clone https://github.com/tpope/vim-fugitive.git
-echo "Command-T will need extra setup, please review its docs"
-open https://github.com/wincent/Command-T/blob/master/doc/command-t.txt#L174
 git clone https://github.com/rking/ag.vim
 git clone https://github.com/editorconfig/editorconfig-vim.git
 git clone https://github.com/sjl/gundo.vim.git
@@ -147,7 +143,7 @@ npm install
 
 
 # Configure Command-T
-cd ~/.vim/bundle/command-t/ruby/command-t
+cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t
 ruby extconf.rb
 make
 
@@ -172,4 +168,5 @@ ln -s Documents/repos/dotfiles/gpg-agent.conf .gnupg/gpg-agent.conf
 ## Casks that needs password permission
 installcask private-internet-access
 installcask dockertoolbox
+installcask gpgtools
 
