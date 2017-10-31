@@ -93,6 +93,7 @@ npm install -g ntl
 npm install -g fkill-cli
 npm install -g localtunnel
 npm install -g webtorrent-cli
+npm install -g gzip-size-cli
 
 
 # vim setup
