@@ -105,7 +105,7 @@ cd ~/.vim/bundle/
 
 # Get all plugins
 git clone https://github.com/vim-scripts/bufkill.vim
-git clone https://github.com/wincent/Command-T.git
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/rking/ag.vim
 git clone https://github.com/editorconfig/editorconfig-vim.git
@@ -140,12 +140,6 @@ git clone https://github.com/rizzatti/dash.vim.git
 # Configure tern_for_vim
 cd ~/.vim/bundle/tern_for_vim
 npm install
-
-
-# Configure Command-T
-cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t
-ruby extconf.rb
-make
 
 
 ## Get dotfiles repo
