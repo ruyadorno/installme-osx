@@ -40,10 +40,8 @@ brew install wifi-password
 brew install gpg
 brew install hub
 brew install asciinema
-
-# MacVim for terminal
 brew install macvim
-alias vim='mvim -v'
+brew install neovim
 
 # OSX native apps
 brew tap caskroom/cask
@@ -100,8 +98,12 @@ npm install -g gzip-size-cli
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
+mkdir -p ~/.config/nvim/autoload
+ln -s ~/.vim/autoload/pathogen.vim ~/.config/nvim/autoload/pathogen.vim
+
 # Go to bundle folder
 cd ~/.vim/bundle/
+ln -s ~/.vim/bundle ~/.config/nvim/bundle
 
 # Get all plugins
 git clone https://github.com/vim-scripts/bufkill.vim
@@ -115,6 +117,7 @@ git clone https://github.com/mitechie/pyflakes-pathogen.git
 git clone https://github.com/scrooloose/syntastic.git
 echo "Syntastic will rely on code validation tools, such as jshint"
 git clone https://github.com/altercation/vim-colors-solarized.git
+git clone https://github.com/lifepillar/vim-solarized8
 git clone https://github.com/Lokaltog/vim-easymotion.git
 git clone https://github.com/nvie/vim-flake8.git
 git clone https://github.com/mhinz/vim-signify.git
@@ -133,13 +136,7 @@ git clone https://github.com/othree/javascript-libraries-syntax.vim.git
 git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/ekalinin/Dockerfile.vim.git
-git clone https://github.com/ternjs/tern_for_vim.git
 git clone https://github.com/rizzatti/dash.vim.git
-
-
-# Configure tern_for_vim
-cd ~/.vim/bundle/tern_for_vim
-npm install
 
 
 ## Get dotfiles repo
@@ -155,6 +152,7 @@ ln -s Documents/repos/dotfiles/gitconfig .gitconfig
 ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
 ln -s Documents/repos/dotfiles/hgrc .hgrc
 ln -s Documents/repos/dotfiles/vimrc .vimrc
+ln -s Documents/repos/dotfiles/vimrc .config/nvim/init.vim
 ln -s Documents/repos/dotfiles/gpg.conf .gnupg/gpg.conf
 ln -s Documents/repos/dotfiles/gpg-agent.conf .gnupg/gpg-agent.conf
 
