@@ -28,6 +28,7 @@ brew install git
 brew install git-lfs
 brew install mercurial
 brew install node
+brew install python3
 brew install irssi
 brew install phantomjs
 brew install unrar
@@ -105,13 +106,16 @@ ln -s ~/.vim/autoload/pathogen.vim ~/.config/nvim/autoload/pathogen.vim
 cd ~/.vim/bundle/
 ln -s ~/.vim/bundle ~/.config/nvim/bundle
 
+# setup python support for neovim
+pip3 install --user --upgrade neovim
+
 # Get all plugins
 git clone https://github.com/vim-scripts/bufkill.vim
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/rking/ag.vim
 git clone https://github.com/editorconfig/editorconfig-vim.git
-git clone https://github.com/sjl/gundo.vim.git
+git clone https://github.com/simnalamburt/vim-mundo.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/mitechie/pyflakes-pathogen.git
 git clone https://github.com/scrooloose/syntastic.git
