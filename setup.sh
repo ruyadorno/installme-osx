@@ -41,7 +41,6 @@ brew install wifi-password
 brew install gpg
 brew install hub
 brew install asciinema
-brew install macvim
 brew install neovim
 brew install tmux
 
