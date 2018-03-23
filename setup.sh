@@ -43,6 +43,7 @@ brew install hub
 brew install asciinema
 brew install macvim
 brew install neovim
+brew install tmux
 
 # OSX native apps
 brew tap caskroom/cask
@@ -141,6 +142,10 @@ git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/ekalinin/Dockerfile.vim.git
 git clone https://github.com/rizzatti/dash.vim.git
+git clone https://github.com/tpope/vim-obsession.git
+
+## tmux setup
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
 ## Get dotfiles repo
