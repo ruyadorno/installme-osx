@@ -165,6 +165,7 @@ ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
 ln -s Documents/repos/dotfiles/hgrc .hgrc
 ln -s Documents/repos/dotfiles/vimrc .vimrc
 ln -s Documents/repos/dotfiles/vimrc .config/nvim/init.vim
+ln -s Documents/repos/dotfiles/tmux.conf .tmux.conf
 ln -s Documents/repos/dotfiles/gpg.conf .gnupg/gpg.conf
 ln -s Documents/repos/dotfiles/gpg-agent.conf .gnupg/gpg-agent.conf
 
