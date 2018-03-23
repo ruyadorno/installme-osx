@@ -27,7 +27,6 @@ brew install ant
 brew install git
 brew install git-lfs
 brew install mercurial
-brew install node
 brew install python3
 brew install irssi
 brew install phantomjs
@@ -43,6 +42,11 @@ brew install hub
 brew install asciinema
 brew install neovim
 brew install tmux
+
+# node setup
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+nvm install node
+nvm use node
 
 # OSX native apps
 brew tap caskroom/cask
