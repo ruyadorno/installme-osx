@@ -147,9 +147,6 @@ git clone https://github.com/ekalinin/Dockerfile.vim.git
 git clone https://github.com/rizzatti/dash.vim.git
 git clone https://github.com/tpope/vim-obsession.git
 
-## tmux setup
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
 
 ## Get dotfiles repo
 cd ~/Documents/repos/
@@ -168,6 +165,13 @@ ln -s Documents/repos/dotfiles/vimrc .config/nvim/init.vim
 ln -s Documents/repos/dotfiles/tmux.conf .tmux.conf
 ln -s Documents/repos/dotfiles/gpg.conf .gnupg/gpg.conf
 ln -s Documents/repos/dotfiles/gpg-agent.conf .gnupg/gpg-agent.conf
+
+
+## tmux setup
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux start-server
+tmux source ~/.tmux.conf
+~/.tmux/plugins/tpm/scripts/install_plugins.sh
 
 
 ## Casks that needs password permission
