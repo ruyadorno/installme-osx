@@ -147,6 +147,7 @@ git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/ekalinin/Dockerfile.vim.git
 git clone https://github.com/rizzatti/dash.vim.git
 git clone https://github.com/tpope/vim-obsession.git
+git clone https://github.com/leafgarland/typescript-vim.git
 
 
 ## Get dotfiles repo
