@@ -58,13 +58,11 @@ function installcask() {
 # dev-related programs
 installcask atom
 installcask dropbox
-installcask copy
 installcask google-chrome
 installcask firefox
 installcask iterm2
 
 # utils
-installcask skype
 installcask lastfm
 installcask spotify
 installcask vlc
@@ -72,8 +70,6 @@ installcask 1password
 installcask licecap
 installcask skitch
 installcask slack
-installcask google-drive
-installcask google-photos-backup
 installcask kap
 
 # games
