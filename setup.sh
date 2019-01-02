@@ -95,6 +95,7 @@ npm install -g webtorrent-cli
 npm install -g gzip-size-cli
 npm install -g diff-so-fancy
 npm install -g globby-cli
+npm install -g svg-term
 
 
 # vim setup
@@ -119,7 +120,6 @@ git clone https://github.com/rking/ag.vim
 git clone https://github.com/editorconfig/editorconfig-vim.git
 git clone https://github.com/simnalamburt/vim-mundo.git
 git clone https://github.com/scrooloose/nerdtree.git
-git clone https://github.com/mitechie/pyflakes-pathogen.git
 git clone https://github.com/scrooloose/syntastic.git
 echo "Syntastic will rely on code validation tools, such as jshint"
 git clone https://github.com/altercation/vim-colors-solarized.git
