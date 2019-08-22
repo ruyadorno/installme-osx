@@ -2,8 +2,9 @@
 
 
 # setup folder structure
-mkdir ~/Documents/workspace
-mkdir ~/Documents/repos
+mkdir -p ~/bin
+mkdir -p ~/Documents/workspace
+mkdir -p ~/Documents/repos
 
 
 # brew setup
@@ -43,10 +44,10 @@ brew install asciinema
 brew install neovim
 brew install tmux
 
-# node setup
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-nvm install node
-nvm use node
+# setup nave
+cd ~/Documents/repos
+git clone https://github.com/isaacs/nave.git
+ln -s ~/Documents/repos/nave/nave.sh ~/bin/nave
 
 # OSX native apps
 brew tap caskroom/cask
