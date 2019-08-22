@@ -49,6 +49,9 @@ cd ~/Documents/repos
 git clone https://github.com/isaacs/nave.git
 ln -s ~/Documents/repos/nave/nave.sh ~/bin/nave
 
+# setup node
+nave install latest
+
 # OSX native apps
 brew tap caskroom/cask
 
