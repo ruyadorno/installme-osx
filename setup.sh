@@ -51,6 +51,7 @@ ln -s ~/Documents/repos/nave/nave.sh ~/bin/nave
 
 # setup node
 nave install latest
+nave use latest
 
 # OSX native apps
 brew tap caskroom/cask
