@@ -6,6 +6,8 @@ mkdir -p ~/bin
 mkdir -p ~/Documents/workspace
 mkdir -p ~/Documents/repos
 
+# bin will need to be added to $PATH manually here in order have nave ready later on
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # brew setup
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -24,13 +26,9 @@ brew install readline
 
 # Apps
 brew install the_silver_searcher
-brew install ant
 brew install git
-brew install git-lfs
-brew install mercurial
 brew install python3
 brew install irssi
-brew install phantomjs
 brew install unrar
 brew install trash
 brew install tree
@@ -69,7 +67,7 @@ installcask iterm2
 
 # utils
 installcask lastfm
-installcask spotify
+installcask marshallofsound-google-play-music-player
 installcask vlc
 installcask 1password
 installcask licecap
@@ -180,6 +178,5 @@ tmux source ~/.tmux.conf
 
 ## Casks that needs password permission
 installcask private-internet-access
-installcask dockertoolbox
-installcask gpgtools
+installcask gpg-suite
 
