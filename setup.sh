@@ -41,6 +41,7 @@ brew install hub
 brew install asciinema
 brew install neovim
 brew install tmux
+brew install fd
 
 # setup nave
 cd ~/Documents/repos
