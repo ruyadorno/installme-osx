@@ -149,6 +149,7 @@ git clone https://github.com/ekalinin/Dockerfile.vim.git
 git clone https://github.com/rizzatti/dash.vim.git
 git clone https://github.com/tpope/vim-obsession.git
 git clone https://github.com/leafgarland/typescript-vim.git
+git clone https://github.com/christoomey/vim-tmux-navigator.git
 
 
 ## Get dotfiles repo
