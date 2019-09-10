@@ -160,6 +160,7 @@ git clone https://github.com/rupa/z.git
 
 ## Setup symlinks
 cd ~/
+mkdir -p .config/nvim
 ln -s Documents/repos/dotfiles/bashrc .bash_profile
 ln -s Documents/repos/dotfiles/gitconfig .gitconfig
 ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
