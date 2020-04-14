@@ -44,6 +44,7 @@ brew install asciinema
 brew install neovim
 brew install tmux
 brew install fd
+brew install ccache
 
 # setup nave
 cd ~/Documents/repos
