@@ -100,6 +100,7 @@ npm install -g gzip-size-cli
 npm install -g diff-so-fancy
 npm install -g globby-cli
 npm install -g svg-term
+npm install -g json
 
 
 # vim setup
