@@ -37,6 +37,8 @@ brew install tig
 brew install ffind
 brew install wifi-password
 brew install gpg
+brew install gpg2
+brew install pinentry-mac
 brew install hub
 brew install asciinema
 brew install neovim
