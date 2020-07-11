@@ -45,6 +45,9 @@ brew install neovim
 brew install tmux
 brew install fd
 brew install ccache
+brew install github/gh/gh
+brew install bat
+brew install hyperfine
 
 # setup nave
 cd ~/Documents/repos
