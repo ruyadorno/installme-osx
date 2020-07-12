@@ -121,7 +121,6 @@ cd ~/.vim/bundle/
 ln -s ~/.vim/bundle ~/.config/nvim/bundle
 
 # setup python support for neovim
-pip2 install --user neovim
 pip3 install --user neovim
 
 # Get all plugins
