@@ -107,6 +107,7 @@ npm install -g diff-so-fancy
 npm install -g globby-cli
 npm install -g svg-term
 npm install -g json
+npm install -g vmd
 
 
 # vim setup
