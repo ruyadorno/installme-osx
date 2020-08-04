@@ -48,6 +48,7 @@ brew install ccache
 brew install github/gh/gh
 brew install bat
 brew install hyperfine
+brew install exa
 
 # setup nave
 cd ~/Documents/repos
