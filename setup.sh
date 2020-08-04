@@ -169,15 +169,12 @@ git clone https://github.com/rupa/z.git
 ## Setup symlinks
 cd ~/
 mkdir -p .config/nvim
-ln -s Documents/repos/dotfiles/bashrc .bash_profile
-ln -s Documents/repos/dotfiles/gitconfig .gitconfig
-ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
-ln -s Documents/repos/dotfiles/hgrc .hgrc
-ln -s Documents/repos/dotfiles/vimrc .vimrc
-ln -s Documents/repos/dotfiles/vimrc .config/nvim/init.vim
-ln -s Documents/repos/dotfiles/tmux.conf .tmux.conf
-ln -s Documents/repos/dotfiles/gpg.conf .gnupg/gpg.conf
-ln -s Documents/repos/dotfiles/gpg-agent.conf .gnupg/gpg-agent.conf
+ln -s $HOME/Documents/repos/dotfiles/bashrc $HOME/.bash_profile
+ln -s $HOME/Documents/repos/dotfiles/gitconfig $HOME/.gitconfig
+ln -s $HOME/Documents/repos/dotfiles/gitignore_global $HOME/.gitignore_global
+ln -s $HOME/Documents/repos/dotfiles/vimrc $HOME/.vimrc
+ln -s $HOME/Documents/repos/dotfiles/vimrc $HOME/.config/nvim/init.vim
+ln -s $HOME/Documents/repos/dotfiles/tmux.conf $HOME/.tmux.conf
 
 
 ## tmux setup
@@ -190,4 +187,8 @@ tmux source ~/.tmux.conf
 ## Casks that needs password permission
 installcask private-internet-access
 installcask gpg-suite
+
+## Link gpg config into place
+ln -s $HOME/Documents/repos/dotfiles/gpg.conf $HOME/.gnupg/gpg.conf
+ln -s $HOME/Documents/repos/dotfiles/gpg-agent.conf $HOME/.gnupg/gpg-agent.conf
 
