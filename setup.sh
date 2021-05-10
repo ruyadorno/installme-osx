@@ -92,13 +92,11 @@ installcask openttd
 # npm dependencies that I'm not likely to live without
 npm install -g jsonlint
 npm install -g eslint
-npm install -g eslint_d
 npm install -g eslintme
 npm install -g http-server
 npm install -g ipt
 npm install -g ntl
 npm install -g fkill-cli
-npm install -g localtunnel
 npm install -g diff-so-fancy
 npm install -g svg-term
 npm install -g json
