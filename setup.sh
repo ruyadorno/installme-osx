@@ -52,7 +52,7 @@ brew install exa
 
 # setup nave
 cd ~/Documents/repos
-git clone https://github.com/isaacs/nave.git
+git clone --branch prioritize-home-bin-path https://github.com/ruyadorno/nave.git
 ln -s ~/Documents/repos/nave/nave.sh ~/bin/nave
 
 # setup node
