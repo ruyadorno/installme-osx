@@ -1,30 +1,31 @@
 #!/bin/sh
 
 
-# setup folder structure
+echo "--- SETUP FOLDER STRUCTURE"
 mkdir -p ~/bin
-mkdir -p ~/Documents/workspace
 mkdir -p ~/Documents/repos
+mkdir -p ~/Documents/ruyadorno
+mkdir -p ~/Documents/workspace
 
 # bin will need to be added to $PATH manually here in order have nave ready later on
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# brew setup
+echo "--- SETUP BREW"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew update
 brew upgrade
 
-# Core utils
+echo "--- BREW INSTALL COREUTILS"
 brew install coreutils
 brew install findutils
 
-# Dependencies
+echo "--- BREW INSTALL DEPS"
 brew install jpeg-turbo
 brew install optipng
 brew install readline
 
-# Apps
+echo "--- BREW INSTALL CLIs"
 brew install the_silver_searcher
 brew install git
 brew install python3
@@ -50,71 +51,43 @@ brew install bat
 brew install hyperfine
 brew install exa
 
-# setup nave
+echo "--- SETUP NAVE"
 cd ~/Documents/repos
-git clone --branch prioritize-home-bin-path https://github.com/ruyadorno/nave.git
+git clone https://github.com/isaacs/nave.git
 ln -s ~/Documents/repos/nave/nave.sh ~/bin/nave
 
-# setup node
+echo "--- SETUP NODE"
 nave install latest
-exec nave use latest
 
-# OSX native apps
-brew tap caskroom/cask
+echo "--- BREW INSTALL APPS"
+brew install google-chrome
+brew install firefox
+brew install iterm2
 
-function installcask() {
-    brew cask install "${@}" 2> /dev/null
-}
+echo "--- BREW INSTALL UTILS APPS"
+brew install vlc
+brew install 1password
+brew install licecap
+brew install slack
+brew install kap
 
-# dev-related programs
-installcask atom
-installcask dropbox
-installcask google-chrome
-installcask firefox
-installcask iterm2
-
-# utils
-installcask lastfm
-installcask marshallofsound-google-play-music-player
-installcask vlc
-installcask 1password
-installcask licecap
-installcask skitch
-installcask slack
-installcask kap
-
-# games
-installcask steam
-installcask minecraft
-installcask openttd
+echo "--- BREW INSTALL GAMES"
+brew install steam
+brew install minecraft
+brew install openttd
 
 
-# npm dependencies that I'm not likely to live without
-npm install -g jsonlint
-npm install -g eslint
-npm install -g eslintme
-npm install -g http-server
-npm install -g ipt
-npm install -g ntl
-npm install -g fkill-cli
-npm install -g diff-so-fancy
-npm install -g svg-term
-npm install -g json
-npm install -g vmd
-
-
-# vim setup
+echo "--- SETUP VIM"
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 mkdir -p ~/.config/nvim/autoload
 ln -s ~/.vim/autoload/pathogen.vim ~/.config/nvim/autoload/pathogen.vim
 
-# Go to bundle folder
 cd ~/.vim/bundle/
 ln -s ~/.vim/bundle ~/.config/nvim/bundle
 
-# setup python support for neovim
+echo "--- NEOVIM PYTHON3 SUPPORT"
 pip3 install --user neovim
 
 # Get all plugins
@@ -126,7 +99,7 @@ git clone https://github.com/editorconfig/editorconfig-vim.git
 git clone https://github.com/simnalamburt/vim-mundo.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/scrooloose/syntastic.git
-echo "Syntastic will rely on code validation tools, such as jshint"
+echo "--- NOTE: Syntastic will rely on code validation tools, such as jshint"
 git clone https://github.com/altercation/vim-colors-solarized.git
 git clone https://github.com/lifepillar/vim-solarized8
 git clone https://github.com/Lokaltog/vim-easymotion.git
@@ -147,13 +120,13 @@ git clone https://github.com/leafgarland/typescript-vim.git
 git clone https://github.com/christoomey/vim-tmux-navigator.git
 
 
-## Get dotfiles repo
+echo "--- SETUP DOTFILES REPO"
 cd ~/Documents/repos/
 git clone https://github.com/ruyadorno/dotfiles.git
 git clone https://github.com/rupa/z.git
 
 
-## Setup symlinks
+echo "--- SETUP SYMLINKS"
 cd ~/
 mkdir -p .config/nvim
 ln -s $HOME/Documents/repos/dotfiles/.bashrc $HOME/.bash_profile
@@ -165,18 +138,61 @@ ln -s $HOME/Documents/repos/dotfiles/.vimrc $HOME/.config/nvim/init.vim
 ln -s $HOME/Documents/repos/dotfiles/.tmux.conf $HOME/.tmux.conf
 
 
-## tmux setup
+echo "--- SETUP TMUX"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux start-server
 tmux source ~/.tmux.conf
 ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 
 
-## Casks that needs password permission
-installcask private-internet-access
-installcask gpg-suite
+echo "--- SETUP GPG SUITE"
+brew install gpg-suite
 
 ## Link gpg config into place
 ln -s $HOME/Documents/repos/dotfiles/gpg.conf $HOME/.gnupg/gpg.conf
 ln -s $HOME/Documents/repos/dotfiles/gpg-agent.conf $HOME/.gnupg/gpg-agent.conf
 
+
+echo "--- SETUP MY NPM DEPS"
+function npm () {
+    nave use latest npm "${@}"
+}
+
+cd $HOME/Documents/ruyadorno
+git clone https://github.com/ruyadorno/eslintme.git
+git clone https://github.com/ruyadorno/ipt.git
+git clone https://github.com/ruyadorno/ntl.git
+cd $HOME/Documents/ruyadorno/eslintme && npm link
+cd $HOME/Documents/ruyadorno/ipt && npm link
+cd $HOME/Documents/ruyadorno/ntl && npm link
+
+
+echo "--- SETUP NODE/NPM"
+cd $HOME/Documents/ruyadorno
+git clone https://github.com/nodejs/node.git
+git clone https://github.com/npm/cli.git
+cd $HOME/Documents/ruyadorno/cli && npm run resetdeps
+
+
+echo "--- INSTALL NPM GLOBAL DEPS"
+npm install -g eslint
+npm install -g http-server
+npm install -g fkill-cli
+npm install -g diff-so-fancy
+npm install -g svg-term
+npm install -g json
+npm install -g vmd
+
+
+echo "--- COMPILE NODEJS FOR THE FIRST TIME"
+echo "--- NOTE: this may take a while, cancel if needed"
+cd $HOME/Documents/ruyadorno/node
+./configure
+make -j16
+
+# Put binaries at the default node install location
+sudo ln -s $HOME/Documents/ruyadorno/node/out/Release/node /usr/local/bin/node
+sudo ln -s $HOME/Documents/ruyadorno/cli/bin/npm-cli.js /usr/local/bin/npm
+
+echo "--- NPM LOGIN"
+npm login
