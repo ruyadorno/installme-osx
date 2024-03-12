@@ -13,6 +13,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 echo "--- SETUP BREW"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# makes sure brew is already available as a command for the reminder of this session
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 brew update
 brew upgrade
 
