@@ -52,7 +52,6 @@ brew install ccache
 brew install github/gh/gh
 brew install bat
 brew install hyperfine
-brew install exa
 brew install highlight
 
 echo "--- SETUP NAVE"
