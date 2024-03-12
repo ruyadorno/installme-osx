@@ -11,7 +11,7 @@ mkdir -p ~/Documents/workspace
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 echo "--- SETUP BREW"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew update
 brew upgrade
