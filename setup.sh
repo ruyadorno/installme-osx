@@ -53,6 +53,7 @@ brew install github/gh/gh
 brew install bat
 brew install hyperfine
 brew install highlight
+brew install eza
 
 echo "--- SETUP NAVE"
 cd ~/Documents/repos
