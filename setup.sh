@@ -100,7 +100,6 @@ git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/rking/ag.vim
 git clone https://github.com/editorconfig/editorconfig-vim.git
-git clone https://github.com/simnalamburt/vim-mundo.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/scrooloose/syntastic.git
 echo "--- NOTE: Syntastic will rely on code validation tools, such as jshint"
